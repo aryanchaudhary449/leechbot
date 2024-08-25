@@ -731,8 +731,8 @@ if ospath.exists('buttons.txt'):
             elif temp[1].startswith('http'):
                 extra_buttons[temp[0]] = temp[1]
 
-if ospath.exists('shorteners.txt'):
-    with open('shorteners.txt', 'r+') as f:
+if ospath.exists('shortener.txt'):
+    with open('shortener.txt', 'r+') as f:
         lines = f.readlines()
         for line in lines:
             temp = line.strip().split()
