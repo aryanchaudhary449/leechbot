@@ -15,9 +15,9 @@ def short_url(longurl, attempt=0):
     if attempt >= 4:
         return longurl
     i = 0 if len(shorteners_list) == 1 else randrange(len(shorteners_list))
-    _shorten_dict = shorteners_list[i]
-    _shortener = _shorten_dict['domain']
-    _shortener_api =  _shorten_dict['api_key']
+    #_shorten_dict = 
+    _shortener = "atglinks.com"
+    _shortener_api = "81da86a7b50694e93649609f5608ecd0cf5fc4f6"
     cget = create_scraper().request
     disable_warnings()
     try:
